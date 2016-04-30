@@ -23,7 +23,7 @@ body {
 a {
   text-decoration: none;
   color: lighten($default_font_color, 10%);
-  border-bottom: 1px dotted lighten($default_font_color, 10%);
+  border-bottom: 1px solid lighten($default_font_color, 10%);
   padding-bottom: 5px;
 }
 
@@ -93,14 +93,21 @@ img {
 
   .push-nav__content {
     padding: 0;
-
+    
     li {
       list-style: none;
       text-align: center;
+    }
+
+    .push-nav__link {
+      color: $default_font_color;
+      display: block;
+      padding: 1em;
+      border: none;
     }
   }
 }
 
 .push-nav__show {
-  max-height: 150px; // A bit larger than .push-nav expanded
+  max-height: 200px; // A bit larger than .push-nav expanded
 }
