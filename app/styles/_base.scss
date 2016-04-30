@@ -37,7 +37,7 @@ img {
 }
 
 .page-sizer {
-  max-width: 700px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -93,7 +93,7 @@ img {
 
   .push-nav__content {
     padding: 0;
-    
+
     li {
       list-style: none;
       text-align: center;
@@ -104,6 +104,7 @@ img {
       display: block;
       padding: 1em;
       border: none;
+      text-transform: uppercase;
     }
   }
 }
