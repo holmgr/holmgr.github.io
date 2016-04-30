@@ -3,6 +3,22 @@
 @import "_normalize.scss";
 @import "_base.scss";
 
+/* About page specific styles */
+.about {
+  margin-top: 40px;
+  .about__intro {
+    p:first-child:first-letter {
+      float: left;
+      color: $headline_color;
+      font-size: 7em;
+      line-height: 0.7;
+      padding-top: 4px;
+      padding-right: 8px;
+      padding-left: 3px;
+    }
+  }
+}
+
 /* Projects page specific styles */
 .proiject_show_case {
   display: flex;
@@ -30,4 +46,21 @@
 
 .projects__gamejam {
   background: lighten(#efe23e, 30%);
+}
+
+/* Contact page specific styles */
+
+.contact__content {
+
+  text-align: center;
+
+  .contact__email-button {
+    display: inline-block;
+    background: #5ecbeb;
+    background: #1c1c1c;
+    line-height: 30px;
+    padding: 1em 3.5em;
+    color: #fff;
+  }
+
 }
