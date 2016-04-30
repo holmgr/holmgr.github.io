@@ -82,3 +82,21 @@ img {
     border-bottom: 2px solid $headline_color;
   }
 }
+
+.push-nav {
+  height: 0;
+  overflow: hidden;
+
+  .push-nav__content {
+    padding: 0;
+
+    li {
+      list-style: none;
+      text-align: center;
+    }
+  }
+}
+
+.push-nav__show {
+  height: 100%;
+}
