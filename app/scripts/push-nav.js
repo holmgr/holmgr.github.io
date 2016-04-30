@@ -14,6 +14,7 @@ class PushNav {
     if (this.pushNavEl.classList.contains('push-nav__show')) {
       this.toggleButtonEl.innerHTML = 'menu';
     } else {
+      this.pushNavEl.style.maxHeight = this.pushNavEl.style.height;
       this.toggleButtonEl.innerHTML = 'close';
     }
     this.pushNavEl.classList.toggle('push-nav__show');
