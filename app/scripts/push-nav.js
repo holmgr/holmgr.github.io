@@ -1,4 +1,6 @@
 
+/* global document */
+/* eslint-disable no-new */
 'use strict';
 
 class PushNav {
