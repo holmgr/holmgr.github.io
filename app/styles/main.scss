@@ -1,66 +1,41 @@
 
 // Include base styling
 @import "_normalize.scss";
-@import "_base.scss";
 
-/* About page specific styles */
-.about {
-  margin-top: 40px;
-  .about__intro {
-    p:first-child:first-letter {
-      float: left;
-      color: $headline_color;
-      font-size: 7em;
-      line-height: 0.7;
-      padding-top: 4px;
-      padding-right: 8px;
-      padding-left: 3px;
-    }
-  }
+
+// Fonts
+$headline_font: 'Playfair Display', serif;
+$body_font: 'Karla', sans-serif;
+
+// Colors
+$headline_color: #484848;
+$default_font_color: #b5b5b0;
+
+// Base styles
+body {
+  font-family: $body_font;
+  font-size: 100%;
+  color: $default_font_color;
+  line-height: 1.5;
+  box-sizing: border-box;
 }
 
-/* Projects page specific styles */
-.proiject_show_case {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
+* {
+  box-sizing: border-box;
 }
 
-.projects__showcase {
-  margin: 2em 0;
-  padding: 4em;
-  display: block;
-
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
+a {
+  text-decoration: none;
+  color: lighten($default_font_color, 10%);
+  border-bottom: 1px solid lighten($default_font_color, 10%);
+  padding-bottom: 5px;
 }
 
-.projects__lithekod {
-  background: #2c7d9b;
-  background: lighten(#1ec6ba, 30%);
+p {
+  line-height: 1.8;
 }
 
-.projects__gamejam {
-  background: lighten(#efe23e, 30%);
-}
-
-/* Contact page specific styles */
-
-.contact__content {
-
-  text-align: center;
-
-  .contact__email-button {
-    display: inline-block;
-    background: #5ecbeb;
-    background: #1c1c1c;
-    line-height: 30px;
-    padding: 1em 3.5em;
-    color: #fff;
-  }
-
+img {
+  max-width: 100%;
+  height: auto;
 }
