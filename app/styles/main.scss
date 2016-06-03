@@ -12,7 +12,7 @@ $caption_font: 'Raleway', sans-serif;
 
 // Colors
 $headline_color: #484848;
-$default_font_color: #747677;
+$default_font_color: #33384c;
 
 // Base styles
 body {
@@ -43,40 +43,71 @@ img {
   height: auto;
 }
 
-.wrapper {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 700px;
-}
-
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   padding-top: 5em;
-  background: #f2f2f2;
+  background: #f2f2f2
+}
 
-  .header__title {
+.section {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 700px;
+
+  .section__title {
+    text-align: center;
     font-size: 0.7em;
-    margin: 0;
+    margin: 3em 0;
     text-transform: uppercase;
     font-family: $caption_font;
     letter-spacing: 2px;
   }
 
-  .header__headline {
+  .section__headline {
     font-family: $headline_font;
     font-weight: normal;
+    text-align: center;
   }
 }
 
-.site {
+.work {
+  padding: 4em 0;
   background: #fff;
+
+  .work__projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .work__project {
+    text-align: center;
+    border: none;
+    font-family: $headline_font;
+    font-size: 2.2em;
+
+    .work__project__number {
+      font-family: $caption_font;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: 0.4em;
+      margin-right: 0.4em;
+    }
+  }
+}
+.contact {
+  padding: 3em 0;
+  background: #f2f2f2;
+  color: #001F3F;
+  background: #7FDBFF;
+  //background: #39CCCC;
 }
 
 @include media(">=desktop") {
   .header__headline {
     font-size: 2em;
+  }
+  .work__project {
+    font-size: 3em;
   }
 }
