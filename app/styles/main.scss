@@ -1,15 +1,18 @@
 
 // Include base styling
+@import "_include-media.scss";
 @import "_normalize.scss";
+@import "_breakpoints.scss";
 @import "_parallax.scss";
 
 // Fonts
 $headline_font: 'Playfair Display', serif;
 $body_font: 'Karla', sans-serif;
+$caption_font: 'Raleway', sans-serif;
 
 // Colors
 $headline_color: #484848;
-$default_font_color: #b5b5b0;
+$default_font_color: #747677;
 
 // Base styles
 body {
@@ -38,4 +41,42 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 700px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5em;
+  background: #f2f2f2;
+
+  .header__title {
+    font-size: 0.7em;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: $caption_font;
+    letter-spacing: 2px;
+  }
+
+  .header__headline {
+    font-family: $headline_font;
+    font-weight: normal;
+  }
+}
+
+.site {
+  background: #fff;
+}
+
+@include media(">=desktop") {
+  .header__headline {
+    font-size: 2em;
+  }
 }
