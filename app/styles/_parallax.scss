@@ -37,6 +37,11 @@
   }
   .parallax__layer--background {
     transform: translateZ(-1px) scale(2);
-    top: calc(270px - 50vh);
+    height: 650px;
+    top: calc(325px - 50vh);
+  }
+
+  .parallax__layer--foreground {
+    top: 650px;
   }
 }

@@ -22,6 +22,7 @@ body {
   color: $default_font_color;
   line-height: 1.5;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
 }
 
 * {
@@ -106,10 +107,10 @@ a {
 }
 
 @include media(">=desktop") {
-  .header__headline {
-    font-size: 2em;
+  .section__headline {
+    font-size: 40px;
   }
   .work__project {
-    font-size: 3em;
+    font-size: 60px !important;
   }
 }
